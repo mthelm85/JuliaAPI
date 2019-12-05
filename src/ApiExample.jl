@@ -15,4 +15,4 @@ route("/addxy") do
     (:answer => addxy(x,y)) |> json
 end
 
-Genie.startup()
+Genie.startup(async=false)
