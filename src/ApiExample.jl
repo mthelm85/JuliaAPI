@@ -2,7 +2,10 @@ using Genie
 using Genie.Router
 import Genie.Router: route
 import Genie.Renderer: json
-include("src/Sum.jl")
+
+function addxy(x::Int64, y::Int64)
+    return sum([x,y])
+end
 
 Genie.config.run_as_server = true
 
