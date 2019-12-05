@@ -1,0 +1,13 @@
+name = "ApiExample"
+uuid = "3fb5a60c-7cec-46b5-b009-7d1216915f35"
+authors = ["Matt Helm"]
+version = "0.1.0"
+
+[compat]
+julia = "1.3"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
