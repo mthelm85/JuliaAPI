@@ -9,6 +9,8 @@ end
 
 function launch_server(port)
     Genie.config.run_as_server = true
+    Genie.config.server_host = "0.0.0.0"
+    Genie.config.server_port = port
 
     route("/addxy") do
         x = parse(Int, get(@params, :x, "0"))
