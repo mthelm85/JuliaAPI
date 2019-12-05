@@ -21,4 +21,4 @@ function launch_server(port)
     Genie.startup()
 end
 
-launch_server(parse(Int, ARGS[1]))
+launch_server(80)
