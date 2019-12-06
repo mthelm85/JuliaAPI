@@ -2,7 +2,7 @@ using Genie
 using Genie.Router
 import Genie.Router: route
 import Genie.Renderer: json
-import .Sum
+include("Sum.jl")
 
 function launch_server(port)
     Genie.config.run_as_server = true
